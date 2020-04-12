@@ -68,7 +68,7 @@ if(!empty($rockAndRoll)){
  * [ switch ] https://secure.php.net/manual/pt_BR/control-structures.switch.php
  */
 fullStackPHPClassSession("switch", __LINE__);
-$payment = "aproved";
+$payment = "";
 
 switch ($payment) {
     case 'canceled':
@@ -84,7 +84,7 @@ switch ($payment) {
             echo "<p>" , var_dump("Pagamento Processando") , "</p>";
             break;    
         default:
-        # code...
+            echo "<p>" , var_dump("Erro ao Processar Pagamento") , "</p>";
         break;
 }
 
